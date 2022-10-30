@@ -9,7 +9,7 @@ import openai
 # this function creates a transcript of the youtube video
 # YouTubeVideoId is the id of the video you want the transcript of
 
-def youtube_video_to_json_transcript(YouTubeVideoId='0m3hGZvD-0s', outputFileName = './data/text/transcript.json'):
+def youtube_video_to_json_transcript(YouTubeVideoId='0m3hGZvD-0s', outputFileName = 'transcript.json'):
     #link = input("Enter video id: ")
     link = YouTubeVideoId
     transcript = YouTubeTranscriptApi.get_transcript(link)
